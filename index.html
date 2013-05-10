@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TOODLE</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript" src="js/ajaxfileupload.js"></script>
+<script src="js/signals.js"></script>
+
+<script src="js/crossroads.js"></script>
+
+<script src="js/hasher.js"></script>
+
+<script src="js/ajaxhelper.js"></script>
+
+<script src="js/approuter.js"></script>
+<script src="js/stayontop.js"></script>
+
+</head>
+<body>
+
+<div id="container">
+	<div id="header">
+	    <div id="picture">
+            <h1>Toodle</h1>
+            <h2>A place of learning</h2>
+	    
+        </div>
+    </div>
+    
+    <div id="leftcol_container">
+    	<div id="nav"class="leftcol">
+
+	</div>
+    
+        <div class="leftcol_bottom"></div>
+        </div>
+      
+        <div id="maincol_container">
+        
+        
+        <div id ="page"class="maincol">
+		<table id="logtable"><tr><td>user name: </td><td><input type="text" id="username"/></td></tr><tr><td>password: </td><td><input type="password" id="pass"/></td></tr><tr><td><button id="logonbtn" type="button">login</button></td><td><button id="forgot" type="button">forgot password</button></td></tr></table><p id ="error"></p>
+
+	
+        </div>
+        <div class="maincol_bottom"></div>
+        </div>
+        
+        
+     <!--<div id="rightcol_container">
+        
+        
+        <div class="rightcol">
+        </div> -->
+
+</div>
+     <div class="modal"><!-- Place at bottom of page --></div>
+     <div id ="newassignment">
+	<input type="hidden" id="type" value='assignment'/>
+	<input type="hidden" id="ptype" value='week'/>
+	<input type="hidden" id="weekid" value=""/>
+	<input type="hidden" id="start" value=""/>
+        assignment name:</br> <textarea id="Field1" class="field textarea medium"  tabindex="5" cols="50" rows="1" spellcheck="true" name="Field1" ></textarea></br>
+	description : </br><textarea id="Field3" class="field textarea medium"  tabindex="5" cols="50" rows="10" spellcheck="true" name="Field3" ></textarea></br>
+	 duedate :</br><input type="datetime-local"  id ="enddate" />
+		
+     </div>
+      <div id ="newquiz">
+	<input type="hidden" id="type" value='quiz'/>
+	<input type="hidden" id="ptype" value='week'/>
+	<input type="hidden" id="weekid" value=""/>
+	
+        quiz name:</br> <textarea id="Field1" class="field textarea medium"  tabindex="5" cols="50" rows="1" spellcheck="true" name="Field1" ></textarea></br>
+	description : </br><textarea id="Field3" class="field textarea medium"  tabindex="5" cols="50" rows="10" spellcheck="true" name="Field3" ></textarea></br>
+	 start date :</br><input type="datetime-local"  id ="startdate" />
+	 due date :</br><input type="datetime-local"  id ="enddate" />
+		
+     </div>
+
+ <script>
+$(function() {
+$( "#accordion" ).accordion();
+
+$( "#accordion2" ).accordion();
+});
+function set_loc(theURL) {
+location.href=theURL;
+}
+</script>
+
+
+</body>
+</html>
